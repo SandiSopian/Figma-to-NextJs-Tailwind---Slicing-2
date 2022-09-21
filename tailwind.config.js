@@ -15,9 +15,10 @@ module.exports = {
     plugin(function ({ addUtilities }) {
       const utilities = {
         ".bg-hero-4": {
-          "background-image": "url(/bg-hero-4.jpg)",
+          "background-image": "url(/bg-hero-1.jpg)",
           backgroundSize: "cover",
-          opacity: "50",
+          opacity: "20",
+          backdropBlur: "xs",
         },
       };
 

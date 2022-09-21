@@ -14,18 +14,40 @@ function MobileNav({ open, setOpen }) {
       <div className="flex flex-col ml-4">
         <a
           className="text-xl font-medium my-4 mt-24"
-          href="/about"
+          href="#home"
           onClick={() =>
             setTimeout(() => {
               setOpen(!open);
             }, 100)
           }
         >
-          About
+          Home
         </a>
         <a
           className="text-xl font-normal my-4"
-          href="/contact"
+          href="#about"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          About Us
+        </a>
+        <a
+          className="text-xl font-normal my-4"
+          href="#menu"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          Menu
+        </a>
+        <a
+          className="text-xl font-normal my-4"
+          href="#contact"
           onClick={() =>
             setTimeout(() => {
               setOpen(!open);
@@ -57,9 +79,11 @@ export default function Navbar() {
           <span className={`h-1 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${open ? "bg-black -rotate-45 -translate-y-3.5" : ""}`} />
         </div>
 
-        <div className="hidden md:flex">
-          <NavLink to="/contact">CONTACT</NavLink>
-          <NavLink to="/about">ABOUT</NavLink>
+        <div className="hidden md:flex text-white shadow-sm">
+          <NavLink to="/#home">HOME</NavLink>
+          <NavLink to="/#about">ABOUT US</NavLink>
+          <NavLink to="/#menu">MENU</NavLink>
+          <NavLink to="/#contact">CONTACT</NavLink>
         </div>
       </div>
     </nav>
