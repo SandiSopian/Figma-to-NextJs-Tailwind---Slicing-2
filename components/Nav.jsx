@@ -64,7 +64,7 @@ function MobileNav({ open, setOpen }) {
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="flex md:justify-center filter drop-shadow-md bg-transparent px-4 py-4 h-20 items-center -mb-20">
+    <nav className="flex sticky md:justify-center filter drop-shadow-md bg-transparent px-4 py-4 h-20 items-center -mb-20">
       <MobileNav open={open} setOpen={setOpen} />
       <div className="flex justify-center">
         <div

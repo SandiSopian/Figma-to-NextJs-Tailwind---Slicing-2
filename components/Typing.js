@@ -7,8 +7,8 @@ class Typing extends React.Component {
   componentDidMount() {
     const options = {
       strings: words,
-      typeSpeed: 50,
-      backSpeed: 50,
+      typeSpeed: 80,
+      backSpeed: 80,
       loop: true,
       cursorChar: "|",
     };

@@ -17,8 +17,7 @@ module.exports = {
         ".bg-hero-4": {
           "background-image": "url(/bg-hero-1.jpg)",
           backgroundSize: "cover",
-          opacity: "20",
-          backdropBlur: "xs",
+          opacity: "25",
         },
       };
 
